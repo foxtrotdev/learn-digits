@@ -22,7 +22,11 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v2
         with:
-          sdk-platform: 'platform-31'
+          sdk-platform: '30'
+          sdk-distribution: 'cmdline-tools'
+
+      - name: Accept licenses
+        run: yes | sdkmanager --licenses
 
       - name: Build Debug APK
         run: |
