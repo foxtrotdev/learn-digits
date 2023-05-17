@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./resources/original_cover.png" alt="Logo">
+  <img src="./resources/original_cover_circle_profiled.png" alt="Logo" height="300">
 </p>
 
 # Numbers 🇺🇸
@@ -13,7 +13,7 @@ Any contributions will be greatly appreciated.
 ## Preview
 
 <p align="center">
-  <img src="./preview/en/preview.gif" alt="preview">
+  <img src="./preview/en/preview.gif" alt="preview" height="500">
 </p>
 
 ---
@@ -33,5 +33,5 @@ Każda współpraca będzie bardzo mile widziana.
 ## Podgląd
 
 <p align="center">
-  <img src="./preview/pl/preview.gif" alt="preview">
+  <img src="./preview/pl/preview.gif" alt="preview" height="500">
 </p>
