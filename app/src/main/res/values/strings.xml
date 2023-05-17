@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Digits</string>
+    <string name="title_home">Home</string>
+    <string name="title_game">Game</string>
+    <string name="title_exit">Exit</string>
+    <string name="title_about">About</string>
+    <string name="home_labels_introduction">Here\'s our new app dedicated to children, allowing them to learn numbers in an interactive and fun way!\n\nChildren listen to the instruction and choose the corresponding digit from 0 to 9, and upon correct answer, a beautiful plant grows!</string>
+    <string name="assets_folder_lang">en</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
+    <string name="about_version">Version 1.0.0</string>
+</resources>
