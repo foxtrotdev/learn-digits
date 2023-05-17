@@ -9,18 +9,10 @@ jobs:
   Gradle:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout code
-      uses: actions/checkout@v2
-    - name: setup jdk
-      uses: actions/setup-java@v1
+    - name: Build Android release APK when create new tag
+      # You may pin to the exact commit or the version.
+      # uses: kyze8439690/action-release-releaseapk@87b79766279011a72b441e3da6cb5b806f5a534e
+      uses: kyze8439690/action-release-releaseapk@1.0.0
       with:
-        java-version: 17
-    - name: Make Gradle executable
-      run: chmod +x ./gradlew
-    - name: Build Release APK
-      run: ./gradlew assembleRelease
-    - name: Releasing using Hub
-      uses: kyze8439690/action-release-releaseapk@master
-      env:
-       GITHUB_TOKEN: ${{ secrets.TOKEN }}
-       APP_FOLDER: app
+        # Github secret token to allow automated publishing of APK to release.
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
