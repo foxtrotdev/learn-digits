@@ -2,6 +2,8 @@
   <img src="./resources/original_cover_circle_profiled.png" alt="Logo" height="300">
 </p>
 
+---
+
 # Numbers 🇺🇸
 
 Here's our new app dedicated to children, allowing them to learn numbers in an interactive and fun way! Children listen to the instruction and choose the corresponding digit from 0 to 9. Upon a correct answer, a beautiful plant grows!
@@ -17,10 +19,6 @@ Any contributions will be greatly appreciated.
 </p>
 
 ---
-
-<p align="center">
-  <img src="./resources/original_cover.png" alt="original_cover">
-</p>
 
 # Cyferki 🇵🇱
 
