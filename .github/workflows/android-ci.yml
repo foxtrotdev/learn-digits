@@ -42,11 +42,24 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN2 }}
         with:
-          files: app/build/outputs/apk/debug/app-debug.apk
           tag_name: ${{ github.ref }}
-          name: Release ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
           body: |
             Release ${{ github.ref }}
           draft: false
+          prerelease: false
+
+      - name: Attach APK to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN2 }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ${{ steps.upload-apk.outputs.artifact_paths }}
+          asset_name: app-debug.apk
+          asset_content_type: application/vnd.android.package-archive
