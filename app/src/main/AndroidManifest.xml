@@ -16,7 +16,8 @@
         <activity
             android:name="eu.mokrzycki.learndigits.MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
