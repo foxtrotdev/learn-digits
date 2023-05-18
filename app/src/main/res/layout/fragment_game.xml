@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/container_1_bg"
-        app:layout_constraintBottom_toTopOf="@id/container_2"
+        app:layout_constraintBottom_toTopOf="@id/buttons_container"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.airbnb.lottie.LottieAnimationView
@@ -55,10 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/cornered_height"
         android:background="@drawable/rounded_top"
-        app:layout_constraintBottom_toTopOf="@id/container_2" />
+        app:layout_constraintBottom_toTopOf="@id/buttons_container" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_2"
+        android:id="@+id/buttons_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingBottom="?actionBarSize"
