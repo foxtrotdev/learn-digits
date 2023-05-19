@@ -42,4 +42,4 @@ Każda współpraca będzie bardzo mile widziana.
 ## Pobierz
 
 Kliknij w ikonkę, aby pobrać najnowszą wersję aplikacji: 
-[<img align="center" src="https://imgur.com/I8khtku.png" alt="download" height="50">](https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.1/learn-digits.apk)
+[<img align="center" src="https://imgur.com/I8khtku.png" alt="pobierz" height="50">](https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.1/learn-digits.apk)
