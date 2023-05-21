@@ -7,5 +7,5 @@
     <string name="title_about">O aplikacji</string>
     <string name="home_labels_introduction">Oto nasza nowa aplikacja dedykowana dla dzieci, umożliwiająca naukę liczb w sposób interaktywny i zabawny!\n\nDzieci słyszą polecenie i wybierają odpowiadającą mu cyfrę z zakresu od 0 do 9, a po poprawnej odpowiedzi, rośnie piękna roślina!</string>
     <string name="assets_folder_lang">pl</string>
-    <string name="about_version">Wersja 1.0.0</string>
+    <string name="about_version">Wersja %s</string>
 </resources>
