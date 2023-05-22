@@ -19,7 +19,7 @@ Builds:
     subdir: app
     sudo:
       - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
+      - apt-get install -y openjdk-11-jdk-headless
       - update-java-alternatives -a
     gradle:
       - yes
