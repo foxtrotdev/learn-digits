@@ -20,19 +20,8 @@ jobs:
           distribution: 'adopt'
           java-version: 17
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v2
-        with:
-          sdk-platform: '30'
-          sdk-distribution: 'cmdline-tools'
-
-      - name: Accept licenses
-        run: yes | sdkmanager --licenses
-
       - name: Assemble Release
-        run: |
-          chmod +x ./gradlew
-          ./gradlew assembleRelease
+        run: ./gradlew clean assembleRelease
 
       - name: Sign Release
         uses: r0adkll/sign-android-release@v1
@@ -44,34 +33,14 @@ jobs:
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
 
-      - name: Upload APK
-        id: upload-apk
-        uses: actions/upload-artifact@v2
-        with:
-          name: apk
-          path: app/build/outputs/apk/release/app-release.apk
+      - name: Rename APK
+        run: mv ${{steps.sign_release.outputs.signedReleaseFile}} app/build/outputs/apk/release/app-release.apk
 
-      - name: Download APK from build
-        uses: actions/download-artifact@v1
+      - name: Create Release on GitHub
+        uses: ncipollo/release-action@v1
         with:
-          name: apk
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN2 }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-
-      - name: Upload Release APK
-        id: upload_release_asset
-        uses: actions/upload-release-asset@v1.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN2 }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-release.apk
-          asset_name: ${{ github.event.repository.name }}.apk
-          asset_content_type: application/zip
+          artifacts: 'app/build/outputs/apk/release/app-fdroid-release.apk'
+          artifactErrorsFailBuild: true
+          tag: '${{ github.ref_name}}'
+          commit: master
+          body: 'Provides a signed APK for reproducible builds.'
