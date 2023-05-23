@@ -1,4 +1,4 @@
-name: Build Debug APK
+name: Build Signed APK
 
 on:
   create:
@@ -14,11 +14,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up JDK
-        uses: actions/setup-java@v2
+      - name: Set Up JDK
+        uses: actions/setup-java@v3
         with:
-          java-version: '17'
           distribution: 'adopt'
+          java-version: 17
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v2
@@ -29,17 +29,27 @@ jobs:
       - name: Accept licenses
         run: yes | sdkmanager --licenses
 
-      - name: Build Debug APK
+      - name: Assemble Release
         run: |
           chmod +x ./gradlew
-          ./gradlew assembleDebug
-          
+          ./gradlew assembleRelease
+
+      - name: Sign Release
+        uses: r0adkll/sign-android-release@v1
+        id: sign_release
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+
       - name: Upload APK
         id: upload-apk
         uses: actions/upload-artifact@v2
         with:
           name: apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/release/app-release.apk
 
       - name: Download APK from build
         uses: actions/download-artifact@v1
@@ -54,7 +64,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          
+
       - name: Upload Release APK
         id: upload_release_asset
         uses: actions/upload-release-asset@v1.0.1
@@ -62,6 +72,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN2 }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-debug.apk
+          asset_path: apk/app-release.apk
           asset_name: ${{ github.event.repository.name }}.apk
           asset_content_type: application/zip
