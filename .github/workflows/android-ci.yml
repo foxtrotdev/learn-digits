@@ -44,5 +44,5 @@ jobs:
           artifacts: 'app/build/outputs/apk/release/app-release.apk'
           artifactErrorsFailBuild: true
           tag: '${{ github.ref_name}}'
-          commit: master
+          commit: main
           body: 'Provides a signed APK for reproducible builds.'
