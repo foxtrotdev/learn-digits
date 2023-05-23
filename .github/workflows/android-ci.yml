@@ -41,7 +41,7 @@ jobs:
       - name: Create Release on GitHub
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'app/build/outputs/apk/release/app-fdroid-release.apk'
+          artifacts: 'app/build/outputs/apk/release/app-release.apk'
           artifactErrorsFailBuild: true
           tag: '${{ github.ref_name}}'
           commit: master
