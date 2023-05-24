@@ -36,12 +36,12 @@ jobs:
           BUILD_TOOLS_VERSION: "30.0.2"
 
       - name: Rename APK
-        run: mv ${{steps.sign_release.outputs.signedReleaseFile}} app/build/outputs/apk/release/app-release.apk
+        run: mv ${{steps.sign_release.outputs.signedReleaseFile}} app/build/outputs/apk/release/${{ github.event.repository.name }}.apk
 
       - name: Create Release on GitHub
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'app/build/outputs/apk/release/app-release.apk'
+          artifacts: 'app/build/outputs/apk/release/${{ github.event.repository.name }}.apk'
           artifactErrorsFailBuild: true
           tag: '${{ github.ref_name}}'
           commit: main
