@@ -14,9 +14,9 @@ Any contributions will be greatly appreciated.
 
 ## Languages & voices currently supported
 
-- 🇺🇸 - EN @foxtrotdev
-- 🇵🇱 - PL @foxtrotdev
-- 🇬🇷 - EL @VasilisKos
+- 🇺🇸 - EN @foxtrotdev (female voice)
+- 🇵🇱 - PL @foxtrotdev (female voice)
+- 🇬🇷 - EL @VasilisKos (male voice)
 
 ## Preview
 
