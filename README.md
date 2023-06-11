@@ -26,5 +26,8 @@ Any contributions will be greatly appreciated.
 
 ## Download
 
-Click the icon to download the latest version of the application: 
-[<img align="center" src="https://imgur.com/I8khtku.png" alt="download" height="50">](https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.1/learn-digits.apk)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/eu.mokrzycki.learndigits/)
+
+Or download the latest APK from the [Releases Section](https://github.com/foxtrotdev/learn-digits/releases/latest).
