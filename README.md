@@ -2,6 +2,18 @@
   <img src="./resources/original_cover_circle_profiled.png" alt="Logo" height="300">
 </p>
 
+
+<p align="center">
+<img src="https://img.shields.io/github/downloads/foxtrotdev/learn-digits/total.svg" alt="GitHub all releases"/>
+<img src="https://img.shields.io/github/contributors/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/>
+</p>
+<p align="center">
+<img src="https://img.shields.io/github/issues-pr/foxtrotdev/learn-digits.svg" alt="GitHub pull requests"/>
+<img src="https://img.shields.io/github/issues-pr-closed/foxtrotdev/learn-digits.svg" alt="GitHub closed pull requests"/>
+<img src="https://img.shields.io/github/issues/foxtrotdev/learn-digits.svg" alt="GitHub issues"/>
+<img src="https://img.shields.io/github/issues-closed/foxtrotdev/learn-digits.svg" alt="GitHub closed issues"/>
+</p>
+
 ---
 
 # Digits
@@ -14,9 +26,9 @@ Any contributions will be greatly appreciated.
 
 ## Languages & voices currently supported
 
-- 🇺🇸 - EN @foxtrotdev
-- 🇵🇱 - PL @foxtrotdev
-- 🇬🇷 - EL @VasilisKos
+- 🇺🇸 - EN @foxtrotdev (female voice)
+- 🇵🇱 - PL @foxtrotdev (female voice)
+- 🇬🇷 - EL @VasilisKos (male voice)
 
 ## Preview
 
@@ -26,5 +38,8 @@ Any contributions will be greatly appreciated.
 
 ## Download
 
-Click the icon to download the latest version of the application: 
-[<img align="center" src="https://imgur.com/I8khtku.png" alt="download" height="50">](https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.1/learn-digits.apk)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/eu.mokrzycki.learndigits/)
+
+Or download the latest APK from the [Releases Section](https://github.com/foxtrotdev/learn-digits/releases/latest).
