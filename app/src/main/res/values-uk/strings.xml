@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Циферки</string>
+    <string name="title_home">Головна</string>
+    <string name="title_game">Гра</string>
+    <string name="title_exit">Вихід</string>
+    <string name="title_about">Про додаток</string>
+    <string name="home_labels_introduction">Ось наша нова програма, спеціально для дітей, яка дозволяє вивчати числа в інтерактивний та веселий спосіб!\n\nДіти почують завдання і виберуть відповідну цифру від 0 до 9. Після правильної відповіді гарна рослина зросте!</string>
+    <string name="assets_folder_lang">uk</string>
+    <string name="about_version">Версія %s</string>
+</resources>
