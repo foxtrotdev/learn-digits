@@ -1,1 +1,1 @@
-Aplikacja dedykowana dla dzieci, umożliwiająca naukę liczb w sposób interaktywny i zabawny! Dzieci słyszą polecenie i wybierają odpowiadającą mu cyfrę z zakresu od 0 do 9. Po poprawnej odpowiedzi rośnie piękna roślina!
+Aplikacja dedykowana dzieciom, umożliwiająca naukę liczb w sposób interaktywny i zabawny! Dzieci słyszą polecenie i wybierają odpowiadającą mu cyfrę z zakresu od 0 do 9. Po poprawnej odpowiedzi rośnie piękna roślina!
