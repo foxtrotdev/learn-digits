@@ -2,16 +2,13 @@
   <img src="./resources/original_cover_circle_profiled.png" alt="Logo" height="300">
 </p>
 
-
 <p align="center">
-<img src="https://img.shields.io/github/downloads/foxtrotdev/learn-digits/total.svg" alt="GitHub all releases"/>
+<img src="https://img.shields.io/github/release/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/>
 <img src="https://img.shields.io/github/contributors/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/>
 </p>
 <p align="center">
 <img src="https://img.shields.io/github/issues-pr/foxtrotdev/learn-digits.svg" alt="GitHub pull requests"/>
-<img src="https://img.shields.io/github/issues-pr-closed/foxtrotdev/learn-digits.svg" alt="GitHub closed pull requests"/>
 <img src="https://img.shields.io/github/issues/foxtrotdev/learn-digits.svg" alt="GitHub issues"/>
-<img src="https://img.shields.io/github/issues-closed/foxtrotdev/learn-digits.svg" alt="GitHub closed issues"/>
 </p>
 
 ---
