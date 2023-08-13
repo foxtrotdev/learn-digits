@@ -26,9 +26,12 @@ Any contributions will be greatly appreciated.
 
 ## Languages & voices currently supported
 
-- 🇺🇸 - EN @foxtrotdev (female voice)
-- 🇵🇱 - PL @foxtrotdev (female voice)
-- 🇬🇷 - EL @VasilisKos (male voice)
+| Language | Supporter | Voice |
+|:---:|:---:|:---:|
+| 🇵🇱 | Magdalena M.  | female |
+| 🇺🇸 | Magdalena M.  | female |
+| 🇬🇷 | @VasilisKos | male  |
+| 🇺🇦 | Alina N. | female |
 
 ## Preview
 
