@@ -1,0 +1,3 @@
+Version 1.0.6
+
+- Added preview images to fastlane.
