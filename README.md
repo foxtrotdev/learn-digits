@@ -3,12 +3,12 @@
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/release/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/>
-<img src="https://img.shields.io/github/contributors/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/>
+<a href="https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.6/learn-digits.apk"><img src="https://img.shields.io/badge/Latest%20Version-v1.0.6-brightgreen.svg" alt="App's latest release"></a>
+<a href="https://github.com/foxtrotdev/learn-digits/graphs/contributors"><img src="https://img.shields.io/github/contributors/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/github/issues-pr/foxtrotdev/learn-digits.svg" alt="GitHub pull requests"/>
-<img src="https://img.shields.io/github/issues/foxtrotdev/learn-digits.svg" alt="GitHub issues"/>
+<a href="https://github.com/foxtrotdev/learn-digits/pulls"><img src="https://img.shields.io/github/issues-pr/foxtrotdev/learn-digits.svg" alt="GitHub pull requests"/></a>
+<a href="https://github.com/foxtrotdev/learn-digits/issues"><img src="https://img.shields.io/github/issues/foxtrotdev/learn-digits.svg" alt="GitHub issues"/></a>
 </p>
 
 ---
