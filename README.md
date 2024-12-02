@@ -29,6 +29,7 @@ Any contributions will be greatly appreciated.
 | 🇺🇸 | Magdalena M.  | female |
 | 🇬🇷 | @VasilisKos | male  |
 | 🇺🇦 | Alina N. | female |
+| 🇳🇱 | Jasper G. | male |
 
 ## Preview
 
