@@ -1,0 +1,1 @@
+Een app speciaal ontworpen voor kinderen, waarmee ze op een interactieve en leuke manier cijfers kunnen leren! Kinderen horen een opdracht en kiezen het juiste cijfer tussen 0 en 9. Bij een correct antwoord groeit er een prachtige plant!
