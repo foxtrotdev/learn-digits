@@ -41,6 +41,12 @@ jobs:
       - name: Verify APK
         run: ls -l app/build/outputs/apk/release/
 
+      - name: Rename APK
+        run: mv ${{steps.sign_release.outputs.signedReleaseFile}} app/build/outputs/apk/release/${{ github.event.repository.name }}.apk
+
+      - name: Verify APK (2)
+        run: ls -l app/build/outputs/apk/release/
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.1.1
@@ -58,6 +64,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: app/build/outputs/apk/release/app-universal-release-unsigned-signed.apk
+          asset_path: app/build/outputs/apk/release/${{ github.event.repository.name }}.apk
           asset_name: '${{ github.ref_name }}.apk'
           asset_content_type: application/zip
