@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.6/learn-digits.apk"><img src="https://img.shields.io/badge/Latest%20Version-v1.0.6-brightgreen.svg" alt="App's latest release"></a>
+<a href="https://github.com/foxtrotdev/learn-digits/releases/download/v1.0.7/learn-digits.apk"><img src="https://img.shields.io/badge/Latest%20Version-v1.0.7-brightgreen.svg" alt="App's latest release"></a>
 <a href="https://github.com/foxtrotdev/learn-digits/graphs/contributors"><img src="https://img.shields.io/github/contributors/foxtrotdev/learn-digits.svg" alt="GitHub contributors"/></a>
 </p>
 <p align="center">
